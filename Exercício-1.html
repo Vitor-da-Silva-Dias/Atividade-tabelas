@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Tabelas 1</title>
+    <style>
+        a {
+            margin-right: 10px;
+        }
+
+        table,
+        tr,
+        td {
+            border: 2px solid #000000;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        .linha-1 {
+            text-align: left;
+        }
+
+        .linha-2 {
+            text-align: center;
+        }
+
+        #linha-3 {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./Exercício-2.html" target="_blank">Exercício 2</a>
+            <a href="./Exercício-3.html" target="_blank">Exercício 3</a>
+        </nav>
+        <h1>Exercício 1</h1>
+    </header>
+    <hr>
+    <main>
+        <h2>Tabela simples</h2><br>
+        <table>
+
+            <!-- Cabeçalho da tabela -->
+
+            <thead>
+                <tr class="linha-1">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </thead>
+
+            <!-- Corpo da tabela -->
+
+            <tbody class="linha-2">
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+
+            <!-- Rodapé da tabela -->
+
+            <tfoot>
+                <tr id="linha-3">
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </tfoot>
+        </table><br><br>
+
+        <h2>Tabela com mesclagem de linhas</h2><br>
+
+        <table>
+            <tr class="linha-1">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr class="linha-2">
+                <td colspan="3">4</td>
+            </tr>
+
+            <tr class="linha-1">
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+
+        </table><br><br>
+
+        <h2>Tabela com mesclagem de linhas e colunas</h2>
+
+        <table>
+            <tr>
+                <td class="linha-1">1</td>
+                <td class="linha-1">2</td>
+                <td rowspan="3" class="linha-2">3</td>
+            </tr>
+
+            <tr class="linha-2">
+                <td colspan="2">4</td>
+            </tr>
+
+            <tr class="linha-1">
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>
